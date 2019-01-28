@@ -1,0 +1,507 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6434FD8221C6F8FE00333911 /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6434FD8121C6F8FE00333911 /* TutorialViewController.swift */; };
+		6434FD8621C6F93D00333911 /* Tutorial-StoryboardExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6434FD8521C6F93D00333911 /* Tutorial-StoryboardExtensions.swift */; };
+		6492A6F921FBF77C0077374F /* OpenDrawerSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64BE189421FBD671000CFF15 /* OpenDrawerSegue.swift */; };
+		649BEB6E21AE33F300125236 /* Splash-StoryboardExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649BEB6D21AE33F300125236 /* Splash-StoryboardExtensions.swift */; };
+		649BEB7021AE343900125236 /* Root-StoryboardExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649BEB6F21AE343900125236 /* Root-StoryboardExtensions.swift */; };
+		649BEB7221AE36A300125236 /* SketchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649BEB7121AE36A300125236 /* SketchViewController.swift */; };
+		649BEB7721AE378B00125236 /* PenDrawerContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649BEB7421AE378B00125236 /* PenDrawerContainerViewController.swift */; };
+		649BEB7821AE378B00125236 /* PenSizeDrawerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649BEB7521AE378B00125236 /* PenSizeDrawerViewController.swift */; };
+		649BEB7921AE378B00125236 /* PenColorDrawerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649BEB7621AE378B00125236 /* PenColorDrawerViewController.swift */; };
+		649BEB7C21AE379900125236 /* PenSelectorButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649BEB7A21AE379900125236 /* PenSelectorButton.swift */; };
+		649BEB8121AE3F6E00125236 /* PenDrawerContainer-StoryboardExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649BEB8021AE3F6E00125236 /* PenDrawerContainer-StoryboardExtensions.swift */; };
+		649F39A821AA3449009FE722 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649F39A721AA3449009FE722 /* AppDelegate.swift */; };
+		649F39AA21AA3449009FE722 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649F39A921AA3449009FE722 /* RootViewController.swift */; };
+		649F39AD21AA3449009FE722 /* Root.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 649F39AB21AA3449009FE722 /* Root.storyboard */; };
+		649F39AF21AA344A009FE722 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 649F39AE21AA344A009FE722 /* Assets.xcassets */; };
+		649F39B221AA344A009FE722 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 649F39B021AA344A009FE722 /* LaunchScreen.storyboard */; };
+		649F39BD21AA35A9009FE722 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649F39BC21AA35A9009FE722 /* ContainerViewController.swift */; };
+		649F39BF21AA3914009FE722 /* SegueHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649F39BE21AA3914009FE722 /* SegueHandling.swift */; };
+		649F39C121AA4422009FE722 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649F39C021AA4422009FE722 /* SplashViewController.swift */; };
+		649F39C421AA446E009FE722 /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 649F39C621AA446E009FE722 /* Splash.storyboard */; };
+		64BA3EEE21E2AE0B0058D33A /* Tutorial.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64BA3EF021E2AE0B0058D33A /* Tutorial.storyboard */; };
+		64BA3EF121E2AE100058D33A /* Sketch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64BA3EF321E2AE100058D33A /* Sketch.storyboard */; };
+		64BA3EF421E2AE150058D33A /* PenDrawerContainer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64BA3EF621E2AE150058D33A /* PenDrawerContainer.storyboard */; };
+		64D42FC921B356B100D7BE82 /* CanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D42FC721B356B100D7BE82 /* CanvasView.swift */; };
+		64D42FCA21B356B100D7BE82 /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D42FC821B356B100D7BE82 /* Line.swift */; };
+		64F5A6DC21F44335004BB962 /* DrawerContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F5A6DB21F44335004BB962 /* DrawerContainerViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6434FD8121C6F8FE00333911 /* TutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
+		6434FD8521C6F93D00333911 /* Tutorial-StoryboardExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tutorial-StoryboardExtensions.swift"; sourceTree = "<group>"; };
+		649BEB6D21AE33F300125236 /* Splash-StoryboardExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Splash-StoryboardExtensions.swift"; sourceTree = "<group>"; };
+		649BEB6F21AE343900125236 /* Root-StoryboardExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Root-StoryboardExtensions.swift"; sourceTree = "<group>"; };
+		649BEB7121AE36A300125236 /* SketchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SketchViewController.swift; sourceTree = "<group>"; };
+		649BEB7421AE378B00125236 /* PenDrawerContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PenDrawerContainerViewController.swift; sourceTree = "<group>"; };
+		649BEB7521AE378B00125236 /* PenSizeDrawerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PenSizeDrawerViewController.swift; sourceTree = "<group>"; };
+		649BEB7621AE378B00125236 /* PenColorDrawerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PenColorDrawerViewController.swift; sourceTree = "<group>"; };
+		649BEB7A21AE379900125236 /* PenSelectorButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PenSelectorButton.swift; sourceTree = "<group>"; };
+		649BEB8021AE3F6E00125236 /* PenDrawerContainer-StoryboardExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PenDrawerContainer-StoryboardExtensions.swift"; sourceTree = "<group>"; };
+		649F39A421AA3449009FE722 /* Containers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Containers.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		649F39A721AA3449009FE722 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		649F39A921AA3449009FE722 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		649F39AC21AA3449009FE722 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Root.storyboard; sourceTree = "<group>"; };
+		649F39AE21AA344A009FE722 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		649F39B121AA344A009FE722 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		649F39B321AA344A009FE722 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		649F39BC21AA35A9009FE722 /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
+		649F39BE21AA3914009FE722 /* SegueHandling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegueHandling.swift; sourceTree = "<group>"; };
+		649F39C021AA4422009FE722 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		649F39C521AA446E009FE722 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Splash.storyboard; sourceTree = "<group>"; };
+		64BA3EEF21E2AE0B0058D33A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Tutorial.storyboard; sourceTree = "<group>"; };
+		64BA3EF221E2AE100058D33A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Sketch.storyboard; sourceTree = "<group>"; };
+		64BA3EF521E2AE150058D33A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/PenDrawerContainer.storyboard; sourceTree = "<group>"; };
+		64BE189421FBD671000CFF15 /* OpenDrawerSegue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenDrawerSegue.swift; sourceTree = "<group>"; };
+		64BEA6DC21F4007600516675 /* SampleCode.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = SampleCode.xcconfig; sourceTree = "<group>"; };
+		64D42FC721B356B100D7BE82 /* CanvasView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanvasView.swift; sourceTree = "<group>"; };
+		64D42FC821B356B100D7BE82 /* Line.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
+		64F5A6DB21F44335004BB962 /* DrawerContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerContainerViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		649F39A121AA3449009FE722 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		649BEB7321AE36EF00125236 /* viewcontrollers */ = {
+			isa = PBXGroup;
+			children = (
+				649BEB7621AE378B00125236 /* PenColorDrawerViewController.swift */,
+				649BEB7421AE378B00125236 /* PenDrawerContainerViewController.swift */,
+				649BEB7521AE378B00125236 /* PenSizeDrawerViewController.swift */,
+				649F39A921AA3449009FE722 /* RootViewController.swift */,
+				649BEB7121AE36A300125236 /* SketchViewController.swift */,
+				649F39C021AA4422009FE722 /* SplashViewController.swift */,
+				6434FD8121C6F8FE00333911 /* TutorialViewController.swift */,
+			);
+			path = viewcontrollers;
+			sourceTree = "<group>";
+		};
+		649F399B21AA3449009FE722 = {
+			isa = PBXGroup;
+			children = (
+				649F39A621AA3449009FE722 /* customcontainers */,
+				649F39A521AA3449009FE722 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		649F39A521AA3449009FE722 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				649F39A421AA3449009FE722 /* Containers.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		649F39A621AA3449009FE722 /* customcontainers */ = {
+			isa = PBXGroup;
+			children = (
+				64D42FC521B350A800D7BE82 /* apple */,
+				649F39BB21AA3554009FE722 /* classes */,
+				64BEA6DB21F4005500516675 /* configuration */,
+				649F39BA21AA3517009FE722 /* resources */,
+				649F39B921AA34E7009FE722 /* storyboards */,
+				649BEB7321AE36EF00125236 /* viewcontrollers */,
+			);
+			path = customcontainers;
+			sourceTree = "<group>";
+		};
+		649F39B921AA34E7009FE722 /* storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				649F39B021AA344A009FE722 /* LaunchScreen.storyboard */,
+				649BEB8021AE3F6E00125236 /* PenDrawerContainer-StoryboardExtensions.swift */,
+				64BA3EF621E2AE150058D33A /* PenDrawerContainer.storyboard */,
+				649BEB6F21AE343900125236 /* Root-StoryboardExtensions.swift */,
+				649F39AB21AA3449009FE722 /* Root.storyboard */,
+				64BA3EF321E2AE100058D33A /* Sketch.storyboard */,
+				649BEB6D21AE33F300125236 /* Splash-StoryboardExtensions.swift */,
+				649F39C621AA446E009FE722 /* Splash.storyboard */,
+				6434FD8521C6F93D00333911 /* Tutorial-StoryboardExtensions.swift */,
+				64BA3EF021E2AE0B0058D33A /* Tutorial.storyboard */,
+			);
+			path = storyboards;
+			sourceTree = "<group>";
+		};
+		649F39BA21AA3517009FE722 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				649F39AE21AA344A009FE722 /* Assets.xcassets */,
+				649F39B321AA344A009FE722 /* Info.plist */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+		649F39BB21AA3554009FE722 /* classes */ = {
+			isa = PBXGroup;
+			children = (
+				649F39A721AA3449009FE722 /* AppDelegate.swift */,
+				649F39BC21AA35A9009FE722 /* ContainerViewController.swift */,
+				64F5A6DB21F44335004BB962 /* DrawerContainerViewController.swift */,
+				64BE189421FBD671000CFF15 /* OpenDrawerSegue.swift */,
+				649BEB7A21AE379900125236 /* PenSelectorButton.swift */,
+				649F39BE21AA3914009FE722 /* SegueHandling.swift */,
+			);
+			path = classes;
+			sourceTree = "<group>";
+		};
+		64BEA6DB21F4005500516675 /* configuration */ = {
+			isa = PBXGroup;
+			children = (
+				64BEA6DC21F4007600516675 /* SampleCode.xcconfig */,
+			);
+			path = configuration;
+			sourceTree = "<group>";
+		};
+		64D42FC521B350A800D7BE82 /* apple */ = {
+			isa = PBXGroup;
+			children = (
+				64D42FC721B356B100D7BE82 /* CanvasView.swift */,
+				64D42FC821B356B100D7BE82 /* Line.swift */,
+			);
+			path = apple;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		649F39A321AA3449009FE722 /* customcontainers */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 649F39B621AA344A009FE722 /* Build configuration list for PBXNativeTarget "customcontainers" */;
+			buildPhases = (
+				649F39A021AA3449009FE722 /* Sources */,
+				649F39A121AA3449009FE722 /* Frameworks */,
+				649F39A221AA3449009FE722 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = customcontainers;
+			productName = customcontainers;
+			productReference = 649F39A421AA3449009FE722 /* Containers.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		649F399C21AA3449009FE722 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "The App Studio LLC";
+				TargetAttributes = {
+					649F39A321AA3449009FE722 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 649F399F21AA3449009FE722 /* Build configuration list for PBXProject "customcontainers" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 649F399B21AA3449009FE722;
+			productRefGroup = 649F39A521AA3449009FE722 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				649F39A321AA3449009FE722 /* customcontainers */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		649F39A221AA3449009FE722 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64BA3EF421E2AE150058D33A /* PenDrawerContainer.storyboard in Resources */,
+				64BA3EEE21E2AE0B0058D33A /* Tutorial.storyboard in Resources */,
+				649F39B221AA344A009FE722 /* LaunchScreen.storyboard in Resources */,
+				649F39AF21AA344A009FE722 /* Assets.xcassets in Resources */,
+				64BA3EF121E2AE100058D33A /* Sketch.storyboard in Resources */,
+				649F39AD21AA3449009FE722 /* Root.storyboard in Resources */,
+				649F39C421AA446E009FE722 /* Splash.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		649F39A021AA3449009FE722 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6492A6F921FBF77C0077374F /* OpenDrawerSegue.swift in Sources */,
+				649F39BF21AA3914009FE722 /* SegueHandling.swift in Sources */,
+				649F39AA21AA3449009FE722 /* RootViewController.swift in Sources */,
+				64D42FC921B356B100D7BE82 /* CanvasView.swift in Sources */,
+				6434FD8621C6F93D00333911 /* Tutorial-StoryboardExtensions.swift in Sources */,
+				649BEB8121AE3F6E00125236 /* PenDrawerContainer-StoryboardExtensions.swift in Sources */,
+				649F39BD21AA35A9009FE722 /* ContainerViewController.swift in Sources */,
+				649BEB7021AE343900125236 /* Root-StoryboardExtensions.swift in Sources */,
+				649BEB6E21AE33F300125236 /* Splash-StoryboardExtensions.swift in Sources */,
+				649F39A821AA3449009FE722 /* AppDelegate.swift in Sources */,
+				649BEB7921AE378B00125236 /* PenColorDrawerViewController.swift in Sources */,
+				649BEB7221AE36A300125236 /* SketchViewController.swift in Sources */,
+				6434FD8221C6F8FE00333911 /* TutorialViewController.swift in Sources */,
+				649BEB7821AE378B00125236 /* PenSizeDrawerViewController.swift in Sources */,
+				649BEB7721AE378B00125236 /* PenDrawerContainerViewController.swift in Sources */,
+				64D42FCA21B356B100D7BE82 /* Line.swift in Sources */,
+				649F39C121AA4422009FE722 /* SplashViewController.swift in Sources */,
+				649BEB7C21AE379900125236 /* PenSelectorButton.swift in Sources */,
+				64F5A6DC21F44335004BB962 /* DrawerContainerViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		649F39AB21AA3449009FE722 /* Root.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				649F39AC21AA3449009FE722 /* Base */,
+			);
+			name = Root.storyboard;
+			sourceTree = "<group>";
+		};
+		649F39B021AA344A009FE722 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				649F39B121AA344A009FE722 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		649F39C621AA446E009FE722 /* Splash.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				649F39C521AA446E009FE722 /* Base */,
+			);
+			name = Splash.storyboard;
+			sourceTree = "<group>";
+		};
+		64BA3EF021E2AE0B0058D33A /* Tutorial.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				64BA3EEF21E2AE0B0058D33A /* Base */,
+			);
+			name = Tutorial.storyboard;
+			sourceTree = "<group>";
+		};
+		64BA3EF321E2AE100058D33A /* Sketch.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				64BA3EF221E2AE100058D33A /* Base */,
+			);
+			name = Sketch.storyboard;
+			sourceTree = "<group>";
+		};
+		64BA3EF621E2AE150058D33A /* PenDrawerContainer.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				64BA3EF521E2AE150058D33A /* Base */,
+			);
+			name = PenDrawerContainer.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		649F39B421AA344A009FE722 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		649F39B521AA344A009FE722 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		649F39B721AA344A009FE722 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64BEA6DC21F4007600516675 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = customcontainers/resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "demo.customcontainers${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = Containers;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		649F39B821AA344A009FE722 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64BEA6DC21F4007600516675 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = customcontainers/resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "demo.customcontainers${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = Containers;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		649F399F21AA3449009FE722 /* Build configuration list for PBXProject "customcontainers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				649F39B421AA344A009FE722 /* Debug */,
+				649F39B521AA344A009FE722 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		649F39B621AA344A009FE722 /* Build configuration list for PBXNativeTarget "customcontainers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				649F39B721AA344A009FE722 /* Debug */,
+				649F39B821AA344A009FE722 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 649F399C21AA3449009FE722 /* Project object */;
+}

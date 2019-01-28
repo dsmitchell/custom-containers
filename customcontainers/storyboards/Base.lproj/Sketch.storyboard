@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ACY-SJ-hLt">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Sketch View Controller-->
+        <scene sceneID="w8E-eW-zLI">
+            <objects>
+                <viewController id="ACY-SJ-hLt" customClass="SketchViewController" customModule="Containers" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IKu-QN-38I">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Sketch" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3xB-u7-Q9R">
+                                <rect key="frame" x="147" y="20" width="81" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ppo-Yj-kuO" customClass="CanvasView" customModule="Containers" customModuleProvider="target">
+                                <rect key="frame" x="16" y="49" width="343" height="538"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NB9-m3-qaO">
+                                <rect key="frame" x="0.0" y="607" width="375" height="60"/>
+                                <connections>
+                                    <segue destination="6bT-Mg-Nmm" kind="embed" id="b9f-8p-6UC"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="NB9-m3-qaO" firstAttribute="leading" secondItem="IKu-QN-38I" secondAttribute="leading" id="0QG-0e-QHf"/>
+                            <constraint firstAttribute="trailing" secondItem="NB9-m3-qaO" secondAttribute="trailing" id="30t-z7-SpM"/>
+                            <constraint firstItem="ppo-Yj-kuO" firstAttribute="leading" secondItem="IKu-QN-38I" secondAttribute="leadingMargin" id="5IL-i5-3gB"/>
+                            <constraint firstItem="6Ab-rh-9HV" firstAttribute="bottom" secondItem="ppo-Yj-kuO" secondAttribute="bottom" constant="80" id="8Or-oe-5Li"/>
+                            <constraint firstItem="6Ab-rh-9HV" firstAttribute="bottom" secondItem="NB9-m3-qaO" secondAttribute="top" priority="750" constant="60" id="Grk-BK-Pyo"/>
+                            <constraint firstAttribute="bottom" secondItem="NB9-m3-qaO" secondAttribute="bottom" id="KEd-cH-nXM"/>
+                            <constraint firstItem="3xB-u7-Q9R" firstAttribute="centerX" secondItem="NB9-m3-qaO" secondAttribute="centerX" id="bAE-sF-B0j"/>
+                            <constraint firstItem="ppo-Yj-kuO" firstAttribute="top" secondItem="3xB-u7-Q9R" secondAttribute="bottom" constant="8" symbolic="YES" id="bap-N8-IAP"/>
+                            <constraint firstItem="3xB-u7-Q9R" firstAttribute="top" secondItem="6Ab-rh-9HV" secondAttribute="top" id="p8K-iE-qMz"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ppo-Yj-kuO" secondAttribute="trailing" id="zfe-HS-DZc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Ab-rh-9HV"/>
+                    </view>
+                    <connections>
+                        <outlet property="canvasView" destination="ppo-Yj-kuO" id="2WH-A4-zfd"/>
+                        <outlet property="penDrawerHeightConstraint" destination="Grk-BK-Pyo" id="xYm-51-umx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Awm-cr-jU4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="56.799999999999997" y="197.45127436281859"/>
+        </scene>
+        <!--PenDrawerContainer-->
+        <scene sceneID="5X1-FY-4is">
+            <objects>
+                <viewControllerPlaceholder storyboardName="PenDrawerContainer" id="6bT-Mg-Nmm" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gh5-23-nle" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="56" y="604"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qbj-hp-d7w">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tutorial View Controller-->
+        <scene sceneID="yB1-bH-fj2">
+            <objects>
+                <viewController id="qbj-hp-d7w" customClass="TutorialViewController" customModule="Containers" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CWw-0X-Mjt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tutorial" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tic-55-Uhg">
+                                <rect key="frame" x="159" y="80" width="57" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a57-JD-mic">
+                                <rect key="frame" x="75" y="242.5" width="225" height="122"/>
+                                <string key="text">How to sketch:
+
+Open the drawer to select a pen size and color, then use your finger to draw. You can also erase!</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nv9-WB-pX8">
+                                <rect key="frame" x="159" y="577" width="57" height="30"/>
+                                <state key="normal" title="Let's Go"/>
+                                <connections>
+                                    <segue destination="4CR-BL-5YE" kind="show" identifier="showSketch" id="DL3-ix-bDF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="3mZ-dr-E9E" firstAttribute="centerY" secondItem="a57-JD-mic" secondAttribute="centerY" constant="40" id="EqY-oK-geQ"/>
+                            <constraint firstItem="Tic-55-Uhg" firstAttribute="centerX" secondItem="3mZ-dr-E9E" secondAttribute="centerX" id="HqD-zl-wa2"/>
+                            <constraint firstItem="Tic-55-Uhg" firstAttribute="top" secondItem="3mZ-dr-E9E" secondAttribute="top" constant="60" id="S4l-Xv-RdC"/>
+                            <constraint firstItem="Nv9-WB-pX8" firstAttribute="centerX" secondItem="3mZ-dr-E9E" secondAttribute="centerX" id="TmS-aw-ebW"/>
+                            <constraint firstItem="a57-JD-mic" firstAttribute="centerX" secondItem="3mZ-dr-E9E" secondAttribute="centerX" id="Y1l-aa-CF6"/>
+                            <constraint firstItem="3mZ-dr-E9E" firstAttribute="bottom" secondItem="Nv9-WB-pX8" secondAttribute="bottom" constant="60" id="gLT-ab-sED"/>
+                            <constraint firstItem="a57-JD-mic" firstAttribute="width" secondItem="CWw-0X-Mjt" secondAttribute="width" multiplier="0.6" id="ump-2J-G7M"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3mZ-dr-E9E"/>
+                    </view>
+                    <connections>
+                        <segue destination="Gvn-5A-Jjp" kind="unwind" identifier="leaveTutorial" unwindAction="unwindToRoot:" id="iys-D1-yBq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z6l-Nm-XXG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Gvn-5A-Jjp" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="-401" y="66"/>
+        </scene>
+        <!--Sketch-->
+        <scene sceneID="yJk-2w-3em">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Sketch" id="4CR-BL-5YE" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="38h-FC-TOe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="158" y="65"/>
+        </scene>
+    </scenes>
+</document>
