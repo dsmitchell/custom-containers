@@ -12,10 +12,10 @@ final class SketchViewController: UIViewController {
 	
 	// MARK: - Interface Builder outlets
 	
-	@IBOutlet private weak var canvasView: CanvasView! {
+	@IBOutlet private var canvasView: CanvasView! {
 		didSet { updateCanvasView() }
 	}
-	@IBOutlet private weak var penDrawerHeightConstraint: NSLayoutConstraint!
+	@IBOutlet private var penDrawerHeightConstraint: NSLayoutConstraint!
 	
 	// MARK: - UIViewController overrides
 	

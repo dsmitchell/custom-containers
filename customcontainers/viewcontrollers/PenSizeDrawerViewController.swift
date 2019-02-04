@@ -12,7 +12,7 @@ final class PenSizeDrawerViewController: UIViewController {
 	
 	// MARK: - Interface Builder outlets
 	
-	@IBOutlet weak var controlStackView: UIStackView!
+	@IBOutlet var controlStackView: UIStackView!
 	
 	@IBInspectable var currentPenSize: CGFloat = 3 {
 		didSet { updateCurrentPenSize(currentPenSize) }

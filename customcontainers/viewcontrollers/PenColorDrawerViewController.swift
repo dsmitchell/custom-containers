@@ -12,7 +12,7 @@ final class PenColorDrawerViewController: UIViewController {
 	
 	// MARK: - Interface Builder outlets
 	
-	@IBOutlet weak var controlStackView: UIStackView!
+	@IBOutlet var controlStackView: UIStackView!
 	
 	@IBInspectable var currentPenColor: UIColor! {
 		didSet { updateCurrentPenColor(currentPenColor) }

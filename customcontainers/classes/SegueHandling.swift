@@ -11,6 +11,7 @@ import UIKit
 /// Represents a storyboard segue handler
 public protocol SegueHandling {
 	
+	/// A RawRepresentable type that represents a storyboard segue's identifier(s) (e.g. a String-based enum)
 	associatedtype SegueIdentifier: RawRepresentable
 }
 
@@ -25,7 +26,7 @@ extension SegueHandling where Self: UIViewController, SegueIdentifier.RawValue =
 		performSegue(withIdentifier: identifier.rawValue, sender: sender)
 	}
 	
-	/// Retrieves the CoreSegueHandling.SegueIdentifier from a StoryboardSegue, if the value is defined as an enum
+	/// Retrieves the SegueHandling.SegueIdentifier from a StoryboardSegue, if the value is defined as an enum
 	///
 	/// - Parameter segue: The UIStoryboardSegue for which to get the SegueIdentifier
 	/// - Returns: Returns a SegueIdentifier if successful, or nil if not

@@ -24,7 +24,7 @@ final class PenDrawerContainerViewController: DrawerContainerViewController {
 		didSet { updateSize(currentPenSize) }
 	}
 	@IBOutlet weak var delegate: PenDrawerContainerViewControllerDelegate?
-	@IBOutlet weak var penSizeButton: PenSelectorButton!
+	@IBOutlet var penSizeButton: PenSelectorButton!
 
 	// MARK: - DrawerContainerViewController overrides
 	

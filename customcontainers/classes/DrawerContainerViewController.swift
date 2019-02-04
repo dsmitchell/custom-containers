@@ -19,7 +19,7 @@ open class DrawerContainerViewController: ContainerViewController {
 	
 	// MARK: - Interface Builder outlets
 	
-	@IBOutlet weak var buttonStackView: UIStackView!
+	@IBOutlet var buttonStackView: UIStackView!
 	
 	// MARK: - ContainerViewController overrides
 	
